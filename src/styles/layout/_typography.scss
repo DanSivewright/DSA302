@@ -1,0 +1,7 @@
+.typo__page {
+  @include page();
+
+  .nm {
+    margin-top: 2em;
+  }
+}

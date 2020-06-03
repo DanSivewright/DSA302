@@ -1,0 +1,21 @@
+.color__page {
+  @include page();
+
+  h2 {
+    margin-top: 2em;
+  }
+
+  .color__container {
+    padding: 0 1em;
+
+    @include mq(768px) {
+      padding: 0;
+    }
+    .color__block {
+      height: 4em;
+      padding: 2em;
+      color: white;
+      width: 75%;
+    }
+  }
+}

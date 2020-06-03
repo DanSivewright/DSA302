@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
+// Style Imports
+import { Row, Col } from 'antd'
+
+// Package Imports
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+
+// Layout imports
+import { Research } from './components/pages/Research'
+import { VisualLanguage } from './components/pages/VisualLanguage'
+import { Elements } from './components/pages/Elements'
+import { Kit } from './components/pages/Kit'
+
+// Shared Components
+import { Navbar } from './components/shared/Navbar'
+
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <Switch>
+        <div className='App'>
+          <Navbar />
+          <Row>
+            <Col span={24}>
+              <Route exact path='/' component={Research} />
+              <Route exact path='/research' component={Research} />
+              <Route exact path='/visual' component={VisualLanguage} />
+              <Route exact path='/elements' component={Elements} />
+              <Route exact path='/kit' component={Kit} />
+            </Col>
+          </Row>
+        </div>
+      </Switch>
+    </Router>
+  )
 }
-
-export default App;
