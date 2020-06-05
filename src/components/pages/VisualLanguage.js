@@ -5,11 +5,11 @@ import { Row, Col } from 'antd'
 
 // Layout Imports
 import { VisualSidebar } from '../shared/VisualSidebar'
-import { Color } from '../layouts/Color'
-import { TypographyComponent } from '../layouts/Typography'
-import { Grid } from '../layouts/Grid'
-import { Iconography } from '../layouts/Iconography'
-import { Motion } from '../layouts/Motion'
+import { Color } from '../layouts/Visual/Color'
+import { TypographyComponent } from '../layouts/Visual/Typography'
+import { Grid } from '../layouts/Visual/Grid'
+import { Iconography } from '../layouts/Visual/Iconography'
+import { Motion } from '../layouts/Visual/Motion'
 
 export const VisualLanguage = () => {
   const [currentMenu, setCurrentMenu] = React.useState('1')

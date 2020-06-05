@@ -1,0 +1,22 @@
+.button__page {
+  @include page();
+
+  .button_card {
+    padding: 3em;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 16px;
+    border: 1px solid #f0f0f0;
+    border-radius: 2px; 
+
+    .button__container {
+      display: flex;
+      justify-content: space-between;
+
+      &.close {
+        justify-content: space-around;
+      }
+    }
+  }
+}
