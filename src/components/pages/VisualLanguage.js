@@ -9,7 +9,6 @@ import { Color } from '../layouts/Visual/Color'
 import { TypographyComponent } from '../layouts/Visual/Typography'
 import { Grid } from '../layouts/Visual/Grid'
 import { Iconography } from '../layouts/Visual/Iconography'
-import { Motion } from '../layouts/Visual/Motion'
 
 export const VisualLanguage = () => {
   const [currentMenu, setCurrentMenu] = React.useState('1')
@@ -33,9 +32,7 @@ export const VisualLanguage = () => {
                 ? <Grid />
                 : currentMenu === '4'
                   ? <Iconography />
-                  : currentMenu === '5'
-                    ? <Motion />
-                    : undefined
+                  : undefined
         }
       </Col>
     </Row>

@@ -11,5 +11,138 @@
 @import './layout/typography';
 @import './layout/grid';
 @import './layout/button';
+@import './layout/icon';
 
 // Pages
+
+// IDC Anymore
+.form__page {
+  @include page();
+
+  .form__card {
+    @include border__card();
+  }
+}
+
+.menu__page {
+  @include page();
+
+  .menu__card {
+    @include border__card();
+    
+    .menu__container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
+  .menu__card2 {
+    @include border__card();
+    padding: 3em 22em;
+
+    .menu__container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.accordian__page {
+  @include page()
+}
+
+.timeline__page {
+  @include page();
+
+  .timeline__card {
+    @include border__card();
+    
+    .timeline__container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.card__page {
+  @include page();
+
+  .card__card {
+    @include border__card();
+    
+    .card__container {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+
+.stat__page {
+  @include page();
+
+  .stat__card {
+    @include border__card();
+    
+    .stat__container-feedback {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .stat__content {
+        margin: 1em 0;
+        width: 33.33%;
+      }
+    }
+    .stat__container {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+
+.popover__page {
+  @include page();
+
+  .popover__card {
+    @include border__card();
+
+    .popover__container {
+      display: flex;
+      justify-content: space-around;
+
+      .pop__button {
+        padding: 1em;
+      }
+    }
+  }
+}
+
+.kit__page {
+  @include page();
+
+  .image1 {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/images/threed_mockup.png');
+  }
+  .image3 {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/images/threed_3.png');
+  }
+  .image2 {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/images/threed_2.png');
+  }
+
+  .left-font {
+    text-align: right;
+  }
+}

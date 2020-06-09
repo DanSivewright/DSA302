@@ -2,13 +2,7 @@
   @include page();
 
   .button_card {
-    padding: 3em;
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    margin: 0 0 16px;
-    border: 1px solid #f0f0f0;
-    border-radius: 2px; 
+    @include border__card();
 
     .button__container {
       display: flex;

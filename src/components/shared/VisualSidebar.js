@@ -22,7 +22,6 @@ export const VisualSidebar = ({ setCurrentMenu, currentMenu }) => {
       <Menu.ItemGroup title='Visual Aid'>
         <Divider />
         <Menu.Item key='4'>Iconography</Menu.Item>
-        <Menu.Item key='5'>Motion</Menu.Item>
       </Menu.ItemGroup>
     </Menu>
   )

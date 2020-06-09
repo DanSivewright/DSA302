@@ -26,8 +26,8 @@ export const ElementsSidebar = ({ setCurrentMenu, currentMenu }) => {
         <Divider />
         <Menu.Item key='4'>Accordian</Menu.Item>
         <Menu.Item key='5'>Timeline</Menu.Item>
-        <Menu.Item key='5'>Cards</Menu.Item>
-        <Menu.Item key='6'>Popover</Menu.Item>
+        <Menu.Item key='6'>Cards</Menu.Item>
+        <Menu.Item key='7'>Popover</Menu.Item>
       </Menu.ItemGroup>
       <Menu.ItemGroup title='Feedback'>
         <Divider />
